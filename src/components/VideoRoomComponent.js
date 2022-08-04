@@ -84,6 +84,7 @@ class VideoRoomComponent extends Component {
     window.removeEventListener("beforeunload", this.onbeforeunload);
     window.removeEventListener("resize", this.updateLayout);
     window.removeEventListener("resize", this.checkSize);
+    console.log("sibal1");
     this.leaveSession();
   }
 
