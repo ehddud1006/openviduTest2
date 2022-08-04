@@ -625,16 +625,18 @@ class VideoRoomComponent extends Component {
    */
 
   getToken() {
+    let ss = "42c53c76-ab53-4091-b624-adbe0f5c3c21";
     return new Promise((resolve, reject) => {
       axios
         .post(
           "https://sagang3.duckdns.org:9443/api/v1/webrtc/voice/get-token",
           {
-            sessionName: "7a68325a-3c7e-4c36-ab87-ad5aeca7c6d8",
+            sessionName: ss,
             email: "ksw",
           }
         )
         .then((response) => {
+          console.log(ss);
           console.log("TOKEN", response);
           resolve(response.data.token);
         })
