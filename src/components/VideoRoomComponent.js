@@ -630,7 +630,7 @@ class VideoRoomComponent extends Component {
         .post(
           "https://sagang3.duckdns.org:9443/api/v1/webrtc/voice/get-token",
           {
-            sessionName: "45eb2cf2-0875-4565-8586-a9b12cc1a39e",
+            sessionName: "7a68325a-3c7e-4c36-ab87-ad5aeca7c6d8",
             email: "ksw",
           }
         )
